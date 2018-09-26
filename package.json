@@ -1,29 +1,50 @@
 {
-  "name": "webpack-test",
-  "version": "1.0.0",
-  "description": "webpack测试",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.conf.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ruobeiming/webpack-test.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ruobeiming/webpack-test/issues"
-  },
-  "homepage": "https://github.com/ruobeiming/webpack-test#readme",
-  "dependencies": {
-    "css-loader": "^1.0.0",
-    "vue": "^2.5.17",
-    "vue-loader": "^15.4.2"
-  },
-  "devDependencies": {
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.1"
-  }
+    "name": "webpack-test",
+    "version": "1.0.0",
+    "description": "webpack测试",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "cross-env NODE_ENV=production webpack --config webpack.conf.js",
+        "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.conf.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ruobeiming/webpack-test.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ruobeiming/webpack-test/issues"
+    },
+    "homepage": "https://github.com/ruobeiming/webpack-test#readme",
+    "dependencies": {
+        "vue": "^2.5.17"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.1.0",
+        "@babel/preset-env": "^7.1.0",
+        "autoprefixer": "^9.1.5",
+        "babel-core": "^6.26.3",
+        "babel-helper-vue-jsx-merge-props": "^2.0.3",
+        "babel-loader": "^8.0.2",
+        "babel-plugin-syntax-jsx": "^6.18.0",
+        "babel-plugin-transform-vue-jsx": "^3.7.0",
+        "babel-preset-env": "^1.7.0",
+        "cross-env": "^5.2.0",
+        "css-loader": "^1.0.0",
+        "file-loader": "^2.0.0",
+        "html-webpack-plugin": "^3.2.0",
+        "less": "^3.8.1",
+        "less-loader": "^4.1.0",
+        "postcss-loader": "^3.0.0",
+        "style-loader": "^0.23.0",
+        "url-loader": "^1.1.1",
+        "vue-loader": "^15.4.2",
+        "vue-style-loader": "^4.1.2",
+        "vue-template-compiler": "^2.5.17",
+        "webpack": "^4.20.2",
+        "webpack-cli": "^3.1.1",
+        "webpack-dev-server": "^3.1.9"
+    }
 }
